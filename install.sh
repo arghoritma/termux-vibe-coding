@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 #
 # termux-vibe-coding — install script
-# Usage: curl -fsSL https://raw.githubusercontent.com/rozaq/termux-vibe-coding/main/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/arghoritma/termux-vibe-coding/main/install.sh | bash
 #
 # Installs termux-vibe-coding via go install (Go required).
 # Supports Termux (Android), macOS, Linux.
 
 set -e
 
-REPO="github.com/rozaq/termux-vibe-coding"
+REPO="github.com/arghoritma/termux-vibe-coding"
 BINDIR="${GOPATH:-$HOME/go}/bin"
 CMD="$REPO/cmd/termux-vibe-coding@latest"
 

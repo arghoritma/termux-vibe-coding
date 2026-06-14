@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rozaq/termux-vibe-coding.git"
+    "url": "git+https://github.com/arghoritma/termux-vibe-coding.git"
   },
   "keywords": [
     "termux",
@@ -32,6 +32,6 @@
     "owasp",
     "pentest"
   ],
-  "author": "Rozaq",
+  "author": "arghoritma",
   "license": "MIT"
 }

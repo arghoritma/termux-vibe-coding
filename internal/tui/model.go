@@ -11,9 +11,9 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/rozaq/termux-vibe-coding/internal/agent"
-	"github.com/rozaq/termux-vibe-coding/internal/ai"
-	"github.com/rozaq/termux-vibe-coding/internal/config"
+	"github.com/arghoritma/termux-vibe-coding/internal/agent"
+	"github.com/arghoritma/termux-vibe-coding/internal/ai"
+	"github.com/arghoritma/termux-vibe-coding/internal/config"
 )
 
 // session stores one chat conversation.

@@ -3,7 +3,7 @@ package ai
 import (
 	"fmt"
 
-	"github.com/rozaq/termux-vibe-coding/internal/config"
+	"github.com/arghoritma/termux-vibe-coding/internal/config"
 )
 
 // Build creates a Provider for the named provider in the config.

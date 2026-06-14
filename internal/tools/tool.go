@@ -3,7 +3,7 @@ package tools
 import (
 	"context"
 
-	"github.com/rozaq/termux-vibe-coding/internal/ai"
+	"github.com/arghoritma/termux-vibe-coding/internal/ai"
 )
 
 // Tool is an action the agent can perform.

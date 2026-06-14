@@ -17,7 +17,7 @@ const { spawnSync, execSync } = require("child_process");
 const PKG = join(__dirname, "package.json");
 const BIN = join(__dirname, "bin", "termux-vibe-coding");
 const VERSION = require(PKG).version || "0.1.0";
-const REPO = "github.com/rozaq/termux-vibe-coding";
+const REPO = "github.com/arghoritma/termux-vibe-coding";
 
 const TARGETS = {
   "android-arm64": "termux-vibe-coding-android-arm64",
@@ -86,7 +86,7 @@ function installViaGo() {
 function installViaDownload() {
   const asset = detectAsset();
   if (!asset) return false;
-  const url = `https://github.com/rozaq/termux-vibe-coding/releases/download/v${VERSION}/${asset}`;
+  const url = `https://github.com/arghoritma/termux-vibe-coding/releases/download/v${VERSION}/${asset}`;
   console.log(`⬇️  Downloading termux-vibe-coding v${VERSION} for ${asset}...`);
   try {
     const { createWriteStream } = require("fs");
@@ -141,7 +141,7 @@ async function install() {
   console.error("   Pastikan Go sudah terinstall, lalu jalankan:");
   console.error(`   go install ${REPO}/cmd/termux-vibe-coding@latest`);
   console.error(
-    `   Atau download manual dari: https://github.com/rozaq/termux-vibe-coding/releases`,
+    `   Atau download manual dari: https://github.com/arghoritma/termux-vibe-coding/releases`,
   );
   return false;
 }

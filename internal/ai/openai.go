@@ -126,7 +126,7 @@ func (p *OpenAIProvider) Complete(ctx context.Context, req Request) (*Response, 
 		httpReq.Header.Set("Authorization", "Bearer "+p.apiKey)
 	}
 	// OpenRouter ranking headers (harmless elsewhere).
-	httpReq.Header.Set("HTTP-Referer", "https://github.com/rozaq/termux-vibe-coding")
+	httpReq.Header.Set("HTTP-Referer", "https://github.com/arghoritma/termux-vibe-coding")
 	httpReq.Header.Set("X-Title", "termux-vibe-coding")
 
 	resp, err := p.client.Do(httpReq)

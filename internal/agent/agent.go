@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/rozaq/termux-vibe-coding/internal/ai"
-	"github.com/rozaq/termux-vibe-coding/internal/config"
-	"github.com/rozaq/termux-vibe-coding/internal/tools"
+	"github.com/arghoritma/termux-vibe-coding/internal/ai"
+	"github.com/arghoritma/termux-vibe-coding/internal/config"
+	"github.com/arghoritma/termux-vibe-coding/internal/tools"
 )
 
 // Handler receives callbacks during a turn so the UI can render progress.

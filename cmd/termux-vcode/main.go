@@ -5,8 +5,8 @@ import (
 	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/rozaq/termux-vibe-coding/internal/config"
-	"github.com/rozaq/termux-vibe-coding/internal/tui"
+	"github.com/arghoritma/termux-vibe-coding/internal/config"
+	"github.com/arghoritma/termux-vibe-coding/internal/tui"
 )
 
 func main() {

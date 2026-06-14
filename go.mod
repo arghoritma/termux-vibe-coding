@@ -1,4 +1,4 @@
-module github.com/rozaq/termux-vibe-coding
+module github.com/arghoritma/termux-vibe-coding
 
 go 1.25.5
 
