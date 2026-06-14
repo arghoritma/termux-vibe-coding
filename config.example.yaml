@@ -1,0 +1,58 @@
+# termux-vibe-coding example configuration
+# Copy to ~/.config/termux-vibe-coding/config.yaml and edit.
+
+provider: openrouter
+model: auto
+
+providers:
+  openrouter:
+    api_key: ${OPENROUTER_API_KEY}   # export OPENROUTER_API_KEY=sk-or-...
+    base_url: https://openrouter.ai/api/v1
+    kind: openai
+    model: auto
+    models:
+      - auto
+      - anthropic/claude-sonnet-4
+      - openai/gpt-4o
+      - google/gemini-2.5-pro
+      - deepseek/deepseek-chat
+    fallback: [openai, anthropic]
+
+  openai:
+    api_key: ${OPENAI_API_KEY}
+    base_url: https://api.openai.com/v1
+    kind: openai
+    model: gpt-4o
+    models: [gpt-4o, gpt-4o-mini]
+
+  anthropic:
+    api_key: ${ANTHROPIC_API_KEY}
+    base_url: https://api.anthropic.com/v1
+    kind: anthropic
+    model: claude-sonnet-4-20250514
+    models: [claude-sonnet-4-20250514, claude-opus-4-20250514]
+
+  gemini:
+    api_key: ${GEMINI_API_KEY}
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai
+    kind: openai
+    model: gemini-2.5-pro
+    models: [gemini-2.5-pro, gemini-2.5-flash]
+
+  ollama:
+    base_url: http://localhost:11434/v1
+    kind: openai
+    model: qwen2.5-coder
+    models: [qwen2.5-coder, deepseek-coder-v2]
+
+agent:
+  auto_approve: false
+  max_tool_calls: 25
+  max_iterations: 50
+  temperature: 0.2
+
+tui:
+  theme: catppuccin    # catppuccin | dracula | nord | tokyonight | neon
+  compact_mode: false
+  show_token_usage: true
+  language: id          # id | en

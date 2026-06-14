@@ -1,0 +1,37 @@
+{
+  "name": "termux-vibe-coding",
+  "version": "0.1.1",
+  "description": "✨ Vibe Coding di Mana Aja dari HP — AI code agent untuk Termux/Android dengan multi-provider, TUI keren, dan OWASP pentest",
+  "bin": {
+    "termux-vibe-coding": "wrapper.js"
+  },
+  "scripts": {
+    "postinstall": "node wrapper.js install",
+    "postupdate": "node wrapper.js install"
+  },
+  "files": [
+    "wrapper.js",
+    "bin/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rozaq/termux-vibe-coding.git"
+  },
+  "keywords": [
+    "termux",
+    "ai",
+    "coding",
+    "android",
+    "cli",
+    "openrouter",
+    "chatgpt",
+    "claude",
+    "gpt",
+    "code-generator",
+    "tui",
+    "owasp",
+    "pentest"
+  ],
+  "author": "Rozaq",
+  "license": "MIT"
+}
